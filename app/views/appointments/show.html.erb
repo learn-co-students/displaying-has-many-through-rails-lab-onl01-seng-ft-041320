@@ -1,0 +1,4 @@
+<h1>Appointments#show</h1>
+<%= @appointment.appointment_datetime.strftime(format='%B %e, %Y %H:%M') %><br>
+<a href="<%=doctor_path%>"><%= @appointment.doctor.name %></a>
+<a href="<%=patient_path%>"><%= @appointment.patient.name %></a>
