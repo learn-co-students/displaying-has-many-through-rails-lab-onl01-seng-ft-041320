@@ -1,4 +1,4 @@
-class Appointment < ActiveRecord::Migration[5.0]
+CreateAppointments < ActiveRecord::Migration[5.0]
   def change
     create_table :appointments do |t|
       t.datetime :appointment_datetime
@@ -6,4 +6,3 @@ class Appointment < ActiveRecord::Migration[5.0]
       t.integer :doctor_id
     end
   end
-end
